@@ -23,7 +23,7 @@ import lombok.extern.slf4j.Slf4j;
 public class StreamController {
 
 	private FileType ts = new FileType(".ts", "video/mp2t");
-	private FileType m3u8 = new FileType(".m2u8", "application/vnd.apple.mpegurl");
+	private FileType m3u8 = new FileType(".m3u8", "application/vnd.apple.mpegurl");
 	private String targetUrl = "http://39.152.129.170:10085/movie/";
 	private String version = "Version:1.0";
 
