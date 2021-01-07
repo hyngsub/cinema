@@ -18,7 +18,6 @@ import com.chea.cinema.entity.FileType;
 
 import lombok.extern.slf4j.Slf4j;
 
-@CrossOrigin
 @Slf4j
 @Controller
 public class StreamController {
@@ -30,9 +29,16 @@ public class StreamController {
 
 	@RequestMapping("/test")
 	public String test() {
+		return "test";
+	}
+	@RequestMapping("/hello")
+	public String hello() {
+		return "hello";
+	}
+	@RequestMapping("/hello1")
+	public String hello1() {
 		return "hello1";
 	}
-
 	@RequestMapping("/version")
 	public String version() {
 		return version;
